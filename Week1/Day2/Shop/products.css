@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    /* border: 2px red solid; */
+    background-color: black;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.crown{
+    /* border: 2px yellow solid; */
+    display: inline-block;
+    margin-right: 80%;
+    font-size: 30px;
+}
+
+.our{
+    /* border: white 2px solid; */
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    align-items: right;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+
+}
+
+.foot{
+    color: white;
+    text-decoration: wavy;
+}
+section {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px;
+    flex-wrap: wrap;
+}
+.product {
+    /* display: inline-block; */
+    position: relative;
+    height: 400px;
+    width: 200px;
+    z-index: 3; 
+}
+.product:hover {
+    z-index: 5;
+    border: 2px red double;
+    /* background-color: aliceblue; */
+}
+
+.image {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+}
+
+.three-icons:hover {
+    position: relative;
+    z-index: 1;
+    color: blue;
+}
+.three-icons span {
+    /* background-color: white; */
+    margin: 10px;
+    z-index: 2;
+}
+.product:nth-child(4n + 1) .image {
+    background-image: url(bug1.JPG)    
+}
+.product:nth-child(4n + 2) .image {
+    background-image: url(chain.JPG)    
+}
+.product:nth-child(4n + 3) .image {
+    background-image: url(DSCF4088.JPG)    
+}
+.product:nth-child(4n + 4) .image {
+    background-image: url(DSCF5496.JPG)    
+}
+.new_tag, .sale_tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    top: 7px;
+    font-size: 0.8em;
+}
+.new_tag {
+    background-color: rgb(0, 156, 104);
+    left: 5px;
+}
+.sale_tag {
+    background-color: rgb(141, 0, 0);
+    right: 5px;
+}
+.name {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.new_price, .old_price {
+    display: inline;
+}
+.new_price {
+    color: green;
+    font-weight: bold;
+}
+.old_price {
+    color: gray;
+    font-size: 0.9em;
+    text-decoration: line-through;
+}
+.product_info {
+    text-align: center;
+}
+.product_info button {
+    display: block;
+    height: 40px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    background-color: white;
+    font-size: 0.8em;
+    border-color: rgb(185, 185, 185);
+    margin: 15px auto;
+}
