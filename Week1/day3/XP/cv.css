@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(183, 220, 241);
+}
+
+img {
+    height: 200px;
+    border: 2px rgb(0, 27, 107) solid;
+}
+
+#top {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50%;
+}
+
+.left {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    /* border: 2px blue solid; */
+    gap: 20px
+}
+
+.bot {
+    /* border: 2px blue solid; */
+    /* height: 20px; */
+}
+
+li {
+    list-style-type: none;
+    margin: 10px;
+}
+
+a {
+    margin-left: 10px;
+}

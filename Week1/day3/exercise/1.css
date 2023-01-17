@@ -99,3 +99,84 @@
   justify-content: center;
   align-items: center;
 }
+
+#grid-one{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(4,1fr); 
+    border: 2px black solid;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 10px;
+}
+.gr{
+    /* height: 100px; */
+    width: 100%;
+    border: 2px purple solid;
+}
+
+.pink{
+    background-color: pink;
+}
+.blue{
+    background-color: blue;
+}
+
+.base{
+grid-column: span 2;
+background-color: rgb(228, 228, 8);
+}
+
+#grid-two{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(13, 1fr);
+    border: 2px black solid;
+    gap: 5px;
+    /* padding: 20px; */
+    margin-top: 100px;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+}
+
+#head{
+    background-color: aqua;
+    grid-column: span 3;
+}
+
+#hero{
+    background-color: lightpink;
+    grid-row: span 4;
+}
+
+#main{
+    background-color: orangered;
+    grid-column: span 2;
+    grid-row: span 8;
+   
+}
+
+#side{
+    background-color: olive;
+    grid-row: span 6;
+   
+}
+#extra{
+    background-color: gray;
+    grid-column: span 2;
+    grid-row: span 2;
+
+}
+#related{
+    background-color: goldenrod;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+#posts{
+    background-color: palevioletred;
+    grid-row: span 2;
+}
+
+#base{
+    background-color: orange;
+    grid-column: span 3;
+}
