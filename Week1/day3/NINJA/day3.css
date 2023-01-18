@@ -1,29 +1,37 @@
 * {
-  background-color: rgb(0, 37, 249);
-  background-image: linear-gradient(
-      45deg,
-      rgb(255, 0, 0) 25%,
-      transparent 25%,
-      transparent 75%,
-      black 75%,
-      black
-    ),
-    linear-gradient(
-      45deg,
-      rgb(255, 0, 0) 25%,
-      transparent 25%,
-      transparent 75%,
-      black 75%,
-      rgb(251, 255, 0)
-    ),
-    linear-gradient(
-      45deg,
-      yellow 25%,
-      transparent 25%,
-      transparent 75%,
-      black 75%,
-      black
-    );
-  background-size: 100px 100px;
-  background-position: 0 0, 50px 50px;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+div{
+  border: 2px black solid;
+  height: 20px;
+  width: 20px;
+}
+.full{
+  display: grid;
+  grid-template-columns: repeat(15,1fr);
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  /* border: 2px solid blue; */
+  height: auto;
+  width: fit-content;
+}
+
+.template{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  /* border: 2px solid blue; */
+  height: auto;
+  width: fit-content;
+}
+.beige{
+  background-color: rgb(100, 100, 13);
+}
+.tan{
+  background-color: tan;
+}
+.brown{
+  background-color: brown;
 }

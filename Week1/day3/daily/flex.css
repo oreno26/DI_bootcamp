@@ -1,24 +1,28 @@
-*{
- box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-div{
-    height: 30px;
-    width: 30px;
-    border: 2px red solid;
-    margin: 10px;
-    background-color: yellow;
+div {
+  height: 30px;
+  width: 30px;
+  border: 2px red solid;
+  margin: 10px;
+  background-color: yellow;
 }
 
-body{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    border: 2px solid black
-    ;
+body {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 10px; */
+  border: 2px solid black;
 }
 
-.b{
-    display: flex;
-    align-items: center;
+.b {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+section {
+  border: 2px black solid;
 }
