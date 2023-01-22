@@ -100,125 +100,125 @@ console.log(3 + 4 + '5');
 // Of course, explain each prediction.
 // Then run the expression in the console. Note the actual output in a comment and compare it with your prediction.
 
-typeof(15)
+console.log(typeof(15))
 // Prediction:number
-// Actual:
+// Actual:number
 
-typeof(5.5)
-// Prediction:
-// Actual:
+console.log(typeof(5.5))
+// Prediction:number
+// Actual:number
 
-typeof(NaN)
-// Prediction:
-// Actual:0000
+console.log(typeof(NaN))
+// Prediction:string
+// Actual:number
 
-typeof("hello")
-// Prediction:
-// Actual:
+console.log(typeof("hello"))
+// Prediction:string
+// Actual:string
 
-typeof(true)
-// Prediction:
-// Actual:
+console.log(typeof(true))
+// Prediction:boolean
+// Actual:boolean
 
-typeof(1 != 2)
-// Prediction:
-// Actual:
+console.log(typeof(1 != 2))
+// Prediction:boolean
+// Actual:boolean
 
-"hamburger" + "s"
-// Prediction:
-// Actual:
+console.log("hamburger" + "s")
+// Prediction:hamburgers
+// Actual:hamburgers
 
-"hamburgers" - "s"
-// Prediction:
-// Actual:
+console.log("hamburgers" - "s")
+// Prediction:hamburger
+// Actual:nan
 
-"1" + "3"
-// Prediction:
-// Actual:
+console.log("1" + "3")
+// Prediction:"13"
+// Actual:"13"
 
-"1" - "3"
-// Prediction:
-// Actual:
+console.log("1" - "3")
+// Prediction:-2
+// Actual:-2
 
-"johnny" + 5
-// Prediction:
-// Actual:
+console.log("johnny" + 5)
+// Prediction:johnny5
+// Actual:johnny5
 
-"johnny" - 5
-// Prediction:
-// Actual:
+console.log("johnny" - 5)
+// Prediction:nan
+// Actual:nan
 
-99 * "hello"
-// Prediction:
-// Actual:
+console.log(99 * "hello")
+// Prediction:nan
+// Actual:nan
 
-1 != 1
-// Prediction:
-// Actual:
+console.log(1 != 1)
+// Prediction: flase
+// Actual: false
 
-1 == "1"
-// Prediction:
-// Actual:
+console.log(1 == "1")
+// Prediction: true
+// Actual:true
 
-1 === "1"
-// Prediction:
-// Actual:
-
-
+console.log(1 === "1")
+// Prediction: false
+// Actual: fasle
 
 
-5 + "34"
-// Prediction:
-// Actual:
 
-5 - "4"
-// Prediction:
-// Actual:
 
-10 % 5
-// Prediction:
-// Actual:
+console.log(5 + "34")
+// Prediction:534
+// Actual:534
 
-5 % 10
-// Prediction:
-// Actual:
+console.log(5 - "4")
+// Prediction:1
+// Actual:1
 
-"Java" + "Script"
-// Prediction:
-// Actual:
-
-" " + " "
-// Prediction:
-// Actual:
-
-" " + 0
+console.log(10 % 5)
 // Prediction:0
-// Actual:
+// Actual:0
 
-true + true
+console.log(5 % 10)
+// Prediction:5
+// Actual:5
+
+console.log("Java" + "Script")
+// Prediction:JavaScript
+// Actual:JavaScript
+
+console.log(" " + " ")
 // Prediction:
 // Actual:
 
-true + false
-// Prediction:
-// Actual:
+console.log(" " + 0)
+// Prediction:0
+// Actual:"0"
 
-false + true
-// Prediction:
-// Actual:
+console.log(true + true)
+// Prediction:true
+// Actual:2
 
-false - true
-// Prediction:
-// Actual:
+console.log(true + false)
+// Prediction:1
+// Actual:1
 
-!true
+console.log(false + true)
+// Prediction:1
+// Actual:1
+
+console.log(false - true)
+// Prediction:-1
+// Actual:-1
+
+console.log(!true)
 // Prediction:not true/false
-// Actual:
+// Actual:false
 
-3 - 4
-// Prediction:
-// Actual:
+console.log(3 - 4)
+// Prediction:-1
+// Actual:-1
 
-"Bob" - "bill"
-// Prediction:
-// Actual:
+console.log("Bob" - "bill")
+// Prediction:nan
+// Actual:nan
