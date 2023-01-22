@@ -9,7 +9,7 @@ const fruits = ["Banana", "Apples", "Oranges", "Blueberries"];
 console.log(fruits);
 fruits.shift();
 console.log(fruits);
-fruits.splice(1, 2, "Blueberries", "Oranges");
+fruits.sort();
 console.log(fruits);
 fruits.push("kiwi");
 console.log(fruits);
