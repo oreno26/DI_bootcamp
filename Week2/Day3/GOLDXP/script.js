@@ -31,4 +31,11 @@ let guestList = {
     sum += age[t];
   }
   console.log(sum);
-  
+
+  let max = age[0];
+for (let i of age) {
+    if (i >= max){
+        max = i
+    }continue
+}
+console.log(max)

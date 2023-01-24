@@ -1,12 +1,23 @@
+const sentance = "The cake was not that bad and pretty nice";
 
-let sentence = 'I think i have a dog and he is not that bad, i like it'
-let wordNot = sentence.indexOf('not');
+const wordNot = sentance.indexOf("not")
+
+const wordBad = sentance.indexOf("bad")
+
+const difference = Math.abs(wordBad - wordNot)
+
+console.log(difference)
 console.log(wordNot)
-
-let wordBad = sentence.indexOf('bad')
 console.log(wordBad)
 
+let split = sentance.split("")
+
+console.log(split)
+
 if (wordBad > wordNot) {
-    sentence = sentence.replace('not that bad', 'good');
-    console.log(sentence)
+    split.splice(wordNot, difference+3, "good")
+    const result = split.join("")
+    console.log(result)
+} else {
+    console.log(sentance)
 }
