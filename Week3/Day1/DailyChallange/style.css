@@ -1,0 +1,34 @@
+/* "mercury", "venus", "earth", "mars", "jupiter", "saturn", "uranus", "neptune", "PLUTO" */
+
+.mercury {
+    background-color: aliceblue;
+}
+.venus {
+    background-color: aqua;
+}
+.earth {
+    background-color: green;
+}
+
+.mars {
+    background-color: red;
+}
+
+.jupiter {
+    background-color: bisque;
+}
+.saturn {
+    background-color: brown;
+}
+
+.uranus {
+    background-color: black;
+}
+
+.neptune {
+    background-color: aquamarine;
+}
+
+.pluto {
+    background-color: gold;
+}
