@@ -25,8 +25,8 @@ function retrieveValue(evt){
   for (let i = 0; i <= document.forms[0].elements.length-2 ; i++){
   let input = document.createTextNode(document.forms[0].elements[i].value);
   let listI = document.createElement("li");
-  listI.appendChild(input);
-  list.appendChild(listI);
+  listI.appendChild(input);//addind in the text
+  list.appendChild(listI);// adding the `li` to the ul
   }
 }
 // get the values of the input tags,

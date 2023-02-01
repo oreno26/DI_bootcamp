@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: Gray;
+    display: flex;
+}
+#pallet{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    border: 1px whitesmoke solid;
+}
+
+.paint{
+    width: 20px;
+    /* background-color: red; */
+    height: 55px;
+    border: 1px white solid;
+
+}
+.paint:hover{
+    cursor: pointer;
+}
+
+#canvas{
+    display: grid;
+    grid-template-columns: repeat(60, 1fr);
+    grid-template-rows: repeat(24, 1fr);
+    background-color: white;
+}
+
+.canvasunit{
+    width: 15px;
+    height: 20px;
+    border: 1px black solid;
+}
+ #clear{
+    border-radius: 5px;
+    grid-column: 1/ span 3 ;
+ }

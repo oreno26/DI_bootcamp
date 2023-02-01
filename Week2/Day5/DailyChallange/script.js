@@ -1,6 +1,6 @@
 var word = "bottles";
-var count = 99;
-while (count > 0) {
+var count = prompt(`number`);
+while (count  +1 > 0) {
   if (count == 1){
     var word = "bottle"
   }

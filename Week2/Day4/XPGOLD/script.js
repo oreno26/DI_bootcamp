@@ -9,7 +9,7 @@ function isBlank() {
   }
 }
 
-// isBlank()
+isBlank()
 
 // Write a JavaScript function to convert a string into an abbreviated form.
 
@@ -22,7 +22,7 @@ function abbreviator() {
   let abbreviatedName = toAbrrreviateArray.join(` `);
   console.log(abbreviatedName);
 }
-// abbreviator()
+abbreviator()
 
 // if you input 'The Quick Brown Fox'
 // the output should be 'tHE qUICK bROWN fOX'.
