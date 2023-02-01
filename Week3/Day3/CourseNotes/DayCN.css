@@ -1,0 +1,10 @@
+div {
+    background-color: blueviolet;
+    border: 5px black double;
+    color: orangered;
+    font-size: 4rem;
+}
+
+body{
+    background-color: darkgrey;
+}
