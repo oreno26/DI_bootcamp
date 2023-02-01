@@ -13,6 +13,9 @@ body{
 #list{
     margin-top: 10px;
     border: .3rem solid blue;
+    min-height: 30vh;
+    min-width: 30vw;
+    background-color: white;
     
     
 }
