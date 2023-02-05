@@ -9,7 +9,7 @@ const toDo = document.forms[0].firstElementChild.value
 console.log(evt.target[0]); 
 if(toDo !== ""){
     tasks = toDo
-    creatingTask(tasks)
+    creatingTask()
 } else {
     alert(`empty`)
 }
@@ -28,7 +28,6 @@ function creatingTask(task){
 
     const newInput = document.createElement("input")
     newInput.setAttribute("type","checkbox");
-    newInput.setAttribute("value", task)
     
     div.appendChild(newInput)
     container.appendChild(div)
@@ -42,6 +41,7 @@ function creatingTask(task){
     
     newLabel.appendChild(labelText)
     div.appendChild(newLabel)
-
+    console.log(tasks);
 }
 
+console.log(tasks);
