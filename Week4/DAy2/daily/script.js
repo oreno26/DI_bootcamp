@@ -32,3 +32,10 @@ const cloneGroceries=()=>{
 console.log(client);
 // console.log(shopping);
 cloneGroceries()
+
+const mergeWords = string => nextString =>
+  nextString === undefined ? 
+  string : 
+  mergeWords(`${string} ${nextString}`);
+
+ mergeWords('There')
