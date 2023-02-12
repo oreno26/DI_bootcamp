@@ -1,0 +1,10 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
