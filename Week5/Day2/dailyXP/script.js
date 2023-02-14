@@ -30,24 +30,30 @@ xhr.onload = function () {
 function appender(name) {
   console.log(name.data[0].images.downsized.url);
   const div = document.createElement(`div`);
-  const removeOne = document.createElement(`button`)
+  const removeOne = document.createElement(`button`);
   const gifLink = document.createElement(`img`);
   gifLink.src = name.data[0].images.downsized.url;
   gifLink.classList.add(`gif`);
-  const textDel = document.createTextNode(`delete one`)
-  removeOne.appendChild(textDel)
-  removeOne.addEventListener("click", remove)
-  div.appendChild(removeOne)
+  const textDel = document.createTextNode(`delete one`);
+  removeOne.appendChild(textDel);
+  removeOne.addEventListener("click", remove);
+  div.appendChild(removeOne);
   div.appendChild(gifLink);
+  div.classList.add(`delete`);
   container.appendChild(div);
 }
 
+function remove(e) {
+  e.target.parentElement.remove();
+  console.log(e.target);
+}
 
+const deleteer = document.getElementById(`allDel`);
+deleteer.addEventListener("click", allDelete);
 
-
-
-
-function remove(e){
-    e.target.parentElement.remove();
-    console.log(e.target);
+function allDelete() {
+  let toDel = document.querySelectorAll(`.delete`); //---> brings an array
+  toDel.forEach((gif) => {
+    gif.remove();
+  });
 }
