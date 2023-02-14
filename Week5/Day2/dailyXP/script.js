@@ -9,8 +9,8 @@ function find(e) {
   let query = e.target[0].value;
   // console.log(query);
   let url = `https://api.giphy.com/v1/gifs/search?q=${query}&limit=1&offset=${Math.floor(
-    Math.random() * 10
-  )}&rating=g&api_key=hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My`;
+    Math.random() * 100
+  )}&rating=R&api_key=hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My`;
   // console.log(url);
 
   request(url);
