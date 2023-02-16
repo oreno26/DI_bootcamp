@@ -13,7 +13,9 @@ function makeAllCaps(arr){
             throw new Error("bad")
         }else{
             const upperCaseArr = arr.map((word)=> word.toUpperCase())
-            console.log(upperCaseArr);
+            // console.log(upperCaseArr);
+            resolve(upperCaseArr)
+
             sortWords(upperCaseArr)
         }
     }).catch((err)=> console.log(err))
@@ -25,7 +27,7 @@ function makeAllCaps(arr){
 function sortWords(arrTwo){
     return new Promise(function(resolve, reject){
         if (arrTwo.length >= 4) {
-            resolve (console.log(arrTwo.sort()))
+            resolve (arrTwo.sort())
         }else{
             reject("not 4 words")
             throw new Error("bad words")
@@ -35,10 +37,15 @@ function sortWords(arrTwo){
 
 
 
-
 makeAllCaps([1, "pear", "banana"])
-makeAllCaps(["apple", "pear", "banana"])
-makeAllCaps(["apple", "pear", "banana", "melon", "kiwi"])
+      .then((arr) => sortWords(arr))
+      .then((result) => console.log(result))
+      .catch(error => console.log(error))
+
+      makeAllCaps(["apple", "pear", "banana", "melon", "kiwi"])
+      .then((arr) => sortWords(arr))
+      .then((result) => console.log(result)) //["APPLE","BANANA", "KIWI", "MELON", "PEAR"]
+      .catch(error => console.log(error))
 
 const morse = `{
     "0": "-----",
