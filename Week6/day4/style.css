@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    background-color: darkgray;
+}
+#box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    border: 2px black solid;
+    font-size: 1.5rem;
+
+}
