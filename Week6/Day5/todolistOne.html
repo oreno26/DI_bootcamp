@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="todolistOne.css" />
+    <title>What To Do?</title>
+  </head>
+  <body>
+    <h1>TO DO LIST</h1>
+    <form action="todolistTwo.html" id="todo">
+      <label for="name">Task Name</label>
+      <input type="text" name="name" id="name" />
+
+      <label for="description">Describe Your Task</label>
+      <textarea
+        name="description"
+        id="description"
+        cols="30"
+        rows="10"
+      >What Are We Doing?</textarea>
+
+      <label for="startTime">Start Time</label>
+      <input type="datetime-local" name="startTime" id="startTime" />
+
+      <label for="endTime">End Time</label>
+      <input type="datetime-local" name="endTime" id="endTime" />
+
+      <button type="submit">submit</button>
+    </form>
+    <script src="todolistOne.js"></script>
+  </body>
+</html>
