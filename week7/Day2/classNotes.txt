@@ -1,0 +1,14 @@
+// API - Application Programming Interface, a common language for a PC to speak to server.
+ 
+// Method:
+// GET: USed for getting Data.
+// POST: Used for  Sending new data/ to Insert Data.
+// Put: Used to MODIFY  data (Update).
+// DELETE: Used fot as the implies to DELETE date.
+
+//CRUD: 
+//Create - POST - New Date.
+//Read - GET - get Data.
+//Update - PUT - updating/modifying existing data.
+//Delete - DELETE - delete.
+
