@@ -24,7 +24,7 @@ class App extends React.Component {
   render() {
     let lang = this.state.languages;
     return (
-      <div style={{ backgroundColor: "pink", textAlign: "center" }}>
+      <div style={{ backgroundColor: "pink", textAlign: "center",width: '30vw' }}>
         <h1>vote for your fav</h1>
         {lang.map((elem) => (
           <div style={{ border: "10px blue double", marginTop: "10px" }}>
