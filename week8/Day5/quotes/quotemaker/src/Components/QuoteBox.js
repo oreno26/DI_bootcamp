@@ -59,7 +59,7 @@ class QuoteBox extends React.Component {
         </button>
         <div
           style={{
-            border:'1rem,black,solid',
+            border:'1rem black solid',
             backgroundColor: `rgb(${a},${b},${c})`,
           }}
         >
