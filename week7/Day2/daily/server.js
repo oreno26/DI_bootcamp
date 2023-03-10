@@ -14,12 +14,36 @@ app.get("/aboutme/:hobby", (req, res) => {
   }
 });
 
+// app.get(`/pic`, (req,res) =>{  ---> correct
+//   res.sendFile(__dirname + `public/pic.html`)
+// })
+ 
 app.use(`/pic`, express.static(`public/pic.html`));
 app.use(`/form`, express.static(`public/index.html`));
+// app.use(express.urlencoded({extended:true}));
+// app.use(express.json()) --> for the form
 
-// app.use(`/formdata`,express.static(`public/formdata.html`))
 app.get(`/formData`, (req, res) => {
   res.send(`<h1>${req.query.mail} <br> said: ${req.query.message}</h1>`);
 });
+ 
+// app.post(`/formData`, (req,res) =>{
+//   res.send(req.body)
+// const newMessage = {
+//   email: req.body.email,
+//   message: req.body.message
+// }
+// res.send(`ffrom ${newMessage.email} sent you ${newMessage.message}`)
+// console.log(newMessage);
+// })
 
+// app.post(‘/formData’, (req,res) => {
+//   // res.send(req.body)
+//       const newMessage = {
+//           email : req.body.email,
+//           message : req.body.message
+//       }
+//       res.send(`from ${newMessage.email} you received a message “${newMessage.message}“`)
+//       console.log(newMessage)
+//   })
 app.listen(3000, () => console.log("on 3000.."));

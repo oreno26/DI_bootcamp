@@ -35,8 +35,8 @@ try {
             countTwo --
             countStep++
         }else if (countTwo === -1) {break;} { 
-            console.log(countStep);
-        } }
+            // console.log(countStep);
+        } }log(`it took ${countStep}s`)
     }
 } catch (error) {
     console.log(error);
