@@ -1,5 +1,5 @@
 export const Reducer = (state, action) => {
-    var list = JSON.parse(localStorage.getItem('transactions'))
+    const list = JSON.parse(localStorage.getItem('transactions'))
     switch (action.type) {
         case 'INSERT':
             list.push(action.payload)
