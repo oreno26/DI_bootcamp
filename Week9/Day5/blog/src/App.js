@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { connect, Provider } from "react-redux";
+import { createStore } from "redux";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-function App() {
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
+import Contact from "./components/Contact";
+import Post from "./components/Post";
+import About from "./components/About";
+import { reducer } from "./Redux/Reducer";
+
+const store = createStore(reducer);
+function App(props) {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Provider store={store}>
+          <Navbar />
+
+          <Routes>
+            <Route path="/Home" element={<Home />} />
+            <Route path="/Contact" element={<Contact />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/:id" element={<Post />} />
+          </Routes>
+        </Provider>
+      </div>
+    </BrowserRouter>
   );
 }
 
-export default App;
+// const mapStateToProps = (state) =>{
+//   // return
+// }
+
+export default App
