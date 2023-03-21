@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+import CurrentWeather from "./CurrentWeather";
+import Search from "./Search";
+
 const API_KEY = "UbNGiPb2ajqsQ53bED1c3gBIbrdwdL2V";
 const Home = () => {
   const [cityKey, setCityKey] = useState(215854);
@@ -20,7 +23,7 @@ const Home = () => {
       .then((res) => res.json())
       .then(
         (data) => {
-            console.log(data);
+          console.log(data);
           setFiveDay(data.DailyForecasts);
           setHead(data.Headline.Text);
         },
@@ -30,12 +33,12 @@ const Home = () => {
           .then((res) => res.json())
           .then((data) => setCity(data.LocalizedName))
       );
-  }, []);
+  }, [isMetric]);
 
   return (
     <>
       <h2>Select City</h2>
-      <input style={{ width: "15vw", border: "2px black solid" }} type="text" />
+      <Search API={API_KEY}/>
       <button>Add to Favorites</button>
       <button onClick={changeUnit}>Change Unit</button>
       <div
@@ -47,7 +50,7 @@ const Home = () => {
           margin: "20px",
         }}
       >
-        <h4>{city}</h4>
+        <CurrentWeather cityKey={cityKey} API={API_KEY} isMetric={isMetric} />
         <h3>{head}</h3>
 
         {fiveDay.map((elem, i) => {
@@ -58,7 +61,7 @@ const Home = () => {
               key={i}
               style={{
                 border: "0.5rem double crimson",
-                width: "10vw",
+                width: "15vw",
                 height: "auto",
                 display: "inline-block",
                 margin: "10px",
@@ -67,11 +70,22 @@ const Home = () => {
             >
               <p>
                 <p style={{ fontWeight: "bold" }}>{dayArr[day.getDay()]}</p>{" "}
+                <img
+                  src={`https://developer.accuweather.com/sites/default/files/${
+                    elem.Day.Icon > 9 ? elem.Day.Icon : "0" + elem.Day.Icon
+                  }-s.png`}
+                />
                 Max: {elem.Temperature.Maximum.Value}{" "}
                 {elem.Temperature.Maximum.Unit}
               </p>
               <p>
-                {" "}
+                <img
+                  src={`https://developer.accuweather.com/sites/default/files/${
+                    elem.Night.Icon > 9
+                      ? elem.Night.Icon
+                      : "0" + elem.Night.Icon
+                  }-s.png`}
+                />
                 Min: {elem.Temperature.Minimum.Value}{" "}
                 {elem.Temperature.Minimum.Unit}
               </p>
